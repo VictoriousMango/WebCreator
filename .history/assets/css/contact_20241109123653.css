@@ -1,0 +1,14 @@
+.contact {
+    border: 1px solid;
+    padding: 10px;
+}
+
+.contact__links {
+    border: 1px solid red;
+    padding: 10px;
+}
+
+.contact__linksIMG {
+    display: ;
+    width: 100px;
+}

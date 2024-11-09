@@ -1,0 +1,26 @@
+.contact {
+    border: 1px solid;
+    padding: 10px;
+}
+
+.contact__links {
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid red;
+    padding: 10px;
+}
+
+.contact__linksIMG {
+    width: 100px;
+}
+
+.card {
+    /* padding: 5px; */
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.card-img-top{
+    max-width: 30%;
+}

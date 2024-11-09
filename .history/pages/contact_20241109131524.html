@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Creator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/contact.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../assets/images/Logo.png" alt="Logo" width="50px" class="d-inline-block align-text-top">
+                Road Pilot
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- NavBar -->
+
+    <!-- Contact -->
+    <div class="contact">
+        <!-- div for icons -->
+        <div class="contact__links">
+            <!-- phone number -->
+             div.contact_
+            <img class="contact__linksIMG" src="../assets/images/contact__phone.png" alt="">
+            <img class="contact__linksIMG" src="../assets/images/contact__email.png" alt="">
+            <img class="contact__linksIMG" src="../assets/images/contact__location.png" alt="">
+        </div>
+        <!-- Dic for Sending Mails -->
+        <div class="card border-light">
+            <img src="../assets/images/contact__mailUs.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Contact Us</h5>
+                <div class="mb-3">
+                    <label for="subject" class="form-label">Subject</label>
+                    <input type="text" class="form-control" id="subject" value="Subject">
+                </div>
+                <div class="mb-3">
+                    <label for="emailContent" class="form-label">Draft Email</label>
+                    <textarea class="form-control" id="emailContent" rows="3" value="Hi company!"></textarea>
+                </div>
+                <button id="sendEmailBtn" class="btn btn-outline-info" onclick="sendEmail()">Go somewhere</button>
+            </div>
+        </div>
+    </div>
+    <!-- Contact -->
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script>
+        function sendEmail() {
+            const subject = document.getElementById('subject').value;
+            const body = document.getElementById('emailContent').value;
+            const screenWidth = window.innerWidth;
+
+            if (screenWidth > 600) {
+                // Open Gmail with pre-filled subject and body
+                const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=additya.akash.mishra@gmail.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+                window.open(gmailUrl, '_blank');
+            } else {
+                // Open default mail app
+                const mailtoUrl = `mailto:additya.akash.mishra@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+                window.location.href = mailtoUrl;
+            }
+        }
+    </script>
+
+</body>
+
+</html>

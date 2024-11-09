@@ -1,0 +1,9 @@
+main {
+    
+}
+footer {
+    position: relative;
+    bottom: 1px;
+    border: 2px solid;
+    background-color: rgba(0, 187, 249, 0.7);
+}

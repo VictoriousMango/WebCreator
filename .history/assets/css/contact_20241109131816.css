@@ -1,0 +1,45 @@
+.contact {
+    padding: 10px;
+}
+
+.contact__links {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.contact__link {
+    
+}
+
+.contact__linksIMG {
+    width: 100px;
+}
+
+.card {
+    /* padding: 5px; */
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.card-img-top{
+    width: 50%;
+}
+.card-body {
+    width: 50%;
+}
+
+@media (max-width: 600px) {
+    .card {
+        flex-direction: column;
+    }
+    .card-img-top{
+        width: 100%;
+    }
+    .card-body {
+        width: 100%;
+    }
+}
+

@@ -1,0 +1,24 @@
+.contact {
+    border: 1px solid;
+    padding: 10px;
+}
+
+.contact__links {
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid red;
+    padding: 10px;
+}
+
+.contact__linksIMG {
+    width: 100px;
+}
+
+.card {
+    padding: 10px;
+    
+}
+
+.img-fluid{
+    max-width: 30%;
+}
