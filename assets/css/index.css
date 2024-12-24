@@ -7,6 +7,10 @@ body {
 
 .navbar {
     background-color: #007bff;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1000;
 }
 
 .navbar-brand,
@@ -30,6 +34,10 @@ body {
     text-transform: uppercase;
     border-bottom: 2px solid #007bff;
     display: inline-block;
+}
+
+main {
+    margin-top: 75px;
 }
 
 main>div {

@@ -1,3 +1,11 @@
+.navbar {
+    background-color: #007bff; /* Keep the light blue background */
+  }
+  .navbar-brand,
+  .nav-link {
+      color: #fff !important;
+  }
+
 .contact {
     padding: 10px;
 }

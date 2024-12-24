@@ -1,11 +1,14 @@
 .navbar {
-    background-color: rgba(208, 255, 255, 0.8); /* Keep the light blue background */
+    background-color: #007bff; /* Keep the light blue background */
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
   }
-  
+  .navbar-brand,
+  .nav-link {
+      color: #fff !important;
+  }
   .services {
     padding-top: 60px;
     display: flex;
